@@ -40,7 +40,9 @@ public class MnInsertAction implements Action {
 		
 		MenuBean mnBean = new MenuBean();
 		mnBean.setMn_name(multi.getParameter("name"));
+		System.out.println("넣기전"+multi.getFilesystemName("pic"));
 		mnBean.setMn_img(multi.getFilesystemName("pic"));
+		System.out.println(multi.getFilesystemName("pic"));
 		mnBean.setMn_price(Integer.parseInt(multi.getParameter("price")));
 		mnBean.setMn_content(multi.getParameter("content"));
 		mnBean.setMn_owner(loginUser.getOw_name());

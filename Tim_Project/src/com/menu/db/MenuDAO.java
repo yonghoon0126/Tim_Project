@@ -179,6 +179,8 @@ public class MenuDAO {
 				mb=new OwnerBean();
 				mb.setOw_name(rs.getString("ow_name"));
 				mb.setOw_addr(rs.getString("ow_addr"));
+				System.out.println(rs.getString("ow_addr"));
+				mb.setOw_img(rs.getString("ow_img"));
 				list.add(mb);
 			}
 

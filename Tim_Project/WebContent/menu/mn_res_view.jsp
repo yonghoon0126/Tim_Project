@@ -71,11 +71,25 @@ header{
  text-align: center;
 }
 </style>
+
+
+<script type="text/javascript" src="script/reserve.js"></script>
+
+
+
+
 </head>
 <body>
 <header>
-	<h1>${mn_name}</h1>
-	<img src="upload/${ow_img.ow_img}" class="img2">
+	<h1>${mn_owner}</h1>
+	<c:choose>
+							<c:when test="${ow_img.ow_img ne '0'}">
+								<img src="upload/${ow_img.ow_img}" width="200px" class="img2">
+							</c:when>
+							<c:otherwise>
+								<img src="upload/default_res.jpg" width="200px" class="img2">
+							</c:otherwise>
+					</c:choose>
 </header>
 	<hr>
 	<div class="a">
@@ -100,7 +114,9 @@ header{
 	</table>
 	</div>
 	</div>
-	<input class="mnBtn" type="button" value="예약하기" onclick="location='TimServlet?command=reserve_add_form'">
+<!-- 	<input class="mnBtn" type="button" value="예약하기" onclick="location='TimServlet?command=reserve_add_form'">
+ -->	
+ 	<input class="mnBtn" type="button" value="예약하기" onclick="revAdd()">
 	<input class="mnBtn" type="button" value="메인으로 가기" onclick="location='TimServlet?command=con_main'">
 </div>
 </body>

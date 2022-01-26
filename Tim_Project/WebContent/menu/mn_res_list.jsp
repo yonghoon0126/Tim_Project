@@ -7,6 +7,20 @@
 <head>
 <meta charset="UTF-8">
 <title>가게 목록, 가게 찾기</title>
+<script>
+function searchCheck(){
+		if(document.search.searchText.value==""){
+			alert("검색어를 입력하세요.");
+			document.search.searchText.focus();
+	 	   document.search.action = "TimServlet?command=mn_res_list";
+			return;
+	   }else{
+			document.search.action = "TimServlet?command=mn_search";
+			document.search.submit();
+	  }
+	}
+
+</script>
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&family=Do+Hyeon&family=Dongle:wght@300&family=IBM+Plex+Sans+KR:wght@200&family=Jua&family=Lato:ital,wght@0,300;1,700&family=Luxurious+Roman&family=Nanum+Gothic&family=Nanum+Gothic+Coding&family=Oswald:wght@600&family=Poppins:wght@500&family=Roboto+Condensed:wght@700&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
 <style>
 body{
@@ -62,9 +76,6 @@ hr{
 	height:10px;
 }
 </style>
-
-<script type="text/javascript" src="script/reserve.js"></script>
-
 </head>
 <body>
 	<%@ include file="../header.jsp" %>
@@ -73,11 +84,7 @@ hr{
 		<div class="row">
 			<form method="post" name="search" action="TimServlet?command=mn_search">
 				<input type="text" class="form-control" placeholder="검색어 입력" name="searchText" maxlength="100">
-					<div class="divBtn">
-
- 							<button class="btn" onclick="searchCheck()">검색</button>
-
-					</div>
+				<div class="divBtn">  <button class="btn" onclick="searchCheck()">검색</button></div>
 			</form>
 		</div>
 		<table class="a">
@@ -98,7 +105,7 @@ hr{
 						</c:choose>
 					</td>
 					<td>
-						<a href="TimServlet?command=mn_res_view&mn_name=${owner.ow_name}">${owner.ow_name}</a>
+						<a href="TimServlet?command=mn_res_view&mn_owner=${owner.ow_name}">${owner.ow_name}</a>
 						<br>
 						${owner.ow_addr}
 					</td>

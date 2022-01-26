@@ -23,7 +23,7 @@ public class RevAddAction implements Action {
 		HttpSession session = request.getSession();
 		
 		ConsumerBean loginUser = (ConsumerBean)session.getAttribute("con_login_User");
-		String store=(String) session.getAttribute("mn_name");	
+		String store=(String) session.getAttribute("mn_owner");	
 		
 		System.out.println("로그인 유저 : "+loginUser.getCon_name());
 		System.out.println("가게이름 : "+store);

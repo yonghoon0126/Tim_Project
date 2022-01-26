@@ -70,6 +70,7 @@ delete menu ;
 delete owner ;
 delete board ;
 delete consumer ;
+
 drop table menu ;
 drop table reservation ;
 drop table owner ;

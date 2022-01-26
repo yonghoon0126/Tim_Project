@@ -21,10 +21,14 @@ public class MnResViewAction implements Action {
 		String url="/menu/mn_res_view.jsp";
 		HttpSession session=request.getSession();
 		
-		String name=request.getParameter("mn_name");
+		String name=request.getParameter("mn_owner");
 		MenuDAO dao=MenuDAO.getInstance();
 		List<MenuBean> res=dao.selectOneOw(name);	
 		System.out.println("menu : "+res);
+		for (int i=0; i<res.size(); i++) {
+			String str = res.get(i).getMn_img().toString();
+			System.out.println("res : "+str);
+		}
 		System.out.println("name : "+name);
 		
 		OwnerBean owBean = new OwnerBean();
@@ -34,8 +38,9 @@ public class MnResViewAction implements Action {
 		
 		request.setAttribute("ow_img",owBean);
 		request.setAttribute("mn_res",res);
-		request.setAttribute("mn_name",name);
-		session.setAttribute("mn_name",name);
+		request.setAttribute("mn_owner",name);
+		
+		session.setAttribute("mn_owner",name);
 		request.getRequestDispatcher(url).forward(request, response);
 		
 	}
