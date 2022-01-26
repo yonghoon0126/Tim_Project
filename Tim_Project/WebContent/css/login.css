@@ -1,0 +1,123 @@
+@charset "utf-8";
+html, body{
+	margin:0;
+	padding:0;
+	height:100%;
+}
+.logo{
+	width:300px; height:250px;
+}
+.login_form{
+	border-radius:30px;
+	padding:0 auto;
+	background:#fff;
+	text-align:center;
+	position:relative;
+	height:753px;
+	width:700px;
+	margin:0 auto;
+	top:37px;
+	box-shadow:6px 6px 0px 0px rgba(88,70,48,.2);
+}
+.text1{
+	width:510px;
+	height:75px;
+	padding-left:110px;
+	background-color:#f4f4f4;
+	border:none;
+	border-radius:7px;
+	font-family:"IBM Plex Sans KR",sans-serif;
+	font-size:15px;
+	background-image:url("../img/user1.png");
+	background-size:63px;
+	background-repeat:no-repeat;
+	background-position:13px center;
+	margin:58px 0 30px;
+}
+.text2{
+	width:510px;
+	height:75px;
+	padding-left:110px;
+	background-color:#f4f4f4;
+	border:none;
+	border-radius:7px;
+	font-family:"IBM Plex Sans KR",sans-serif;
+	font-size:16px;
+	background-image:url("../img/lock1.png");
+	background-size:68px;
+	background-repeat:no-repeat;
+	background-position:13px center;
+	margin-bottom:20px;
+}
+.btn1{
+	width:250px;
+	height:55px;
+	font-size:35px;
+	background-color:#FDD835;
+	color:#fff;
+	border:none;
+	cursor:pointer;
+	border-radius:5px;
+	text-align:center;
+	margin: 25px 10px 10px 10px;
+	font-family:"Be Vietnam Pro",sans-serif;
+	border-radius:50px;
+}
+.btn2{
+	width:250px;
+	height:55px;
+	font-size:35px;
+	background-color:#FDD835;
+	color:#fff;
+	border:none;
+	cursor:pointer;
+	border-radius:5px;
+	margin: 10px 10px 10px 10px;
+	font-family:"Be Vietnam Pro",sans-serif;
+	border-radius:50px;
+}
+.btn1:hover{
+	background:#FDE1B4;
+}
+.btn2:hover{
+	background:#FDE1B4;
+}
+footer{
+width:100%;
+position:absolute;
+bottom:0;
+left:0;
+}
+.bodyWrapper{
+	position:relative;
+}
+.all{
+	min-height:100%;
+	position:relative;
+	top:0;
+	bottom:0;
+	background-color:#FFF9C4;
+}
+.con{
+   border: 0 auto; 
+   text-align:center;
+   margin:0 auto;
+}
+.input{
+   	outline:0;
+   	border:0;
+   	background-color:#fff;
+   	text-decoration:underline;
+   	margin:15px 0;
+}
+.input:hover{
+	color: blue;
+	text-decoration:underline;
+	cursor:pointer;
+}
+.hr{
+	background-color:#584630;
+	height:1px;
+	width:100%;
+	margin:0;
+}

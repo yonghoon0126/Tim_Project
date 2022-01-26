@@ -1,0 +1,156 @@
+@charset "utf-8";
+html{
+	height:99%;
+	width:100%;
+	margin: 0; 
+	padding: 0;
+	
+} 
+body{
+	height:100%;
+	width:100%;
+	margin: 0; 
+	padding: 0;
+   	position:relative;
+   	float:left;
+   	font-family:"Nanum Gothic",sans-serif;
+}
+.hr{
+	margin-top:0;
+	width: 80%;
+}
+.a{
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:2.5%;
+    position:relative;
+}
+.userBtn1{
+   height:30px;
+   width:70px;
+   border-radius:30px;
+   margin-top:8px;
+   background-color:#E9B663;
+   border:1px solid #3F301D;
+}
+.userBtn2{
+   height:30px;
+   width:70px;
+   border-radius:30px;
+   margin-top:8px;
+   background-color:#E9B663;
+   border:1px solid #3F301D;
+}
+.userBtn1:hover{
+	background-color:#E8D581;
+}
+.userBtn2:hover{
+	background-color:#E8D581;
+}
+.owBtn1{
+   margin-top:100px;
+   height:100px;
+   width:330px;
+   border-radius:30px;
+   margin-left:40px;
+   margin-right:40px;
+   position:absolute;
+   transform:translate(50%,0%);
+   border:none;
+   background-image:url("../img/button.png");
+   background-repeat:no-repeat;
+   background-size:100%;
+   font-size:32px;
+}
+.owBtn1:hover{
+	background-color:#E8D581;
+}
+.owBtn2{
+   margin-top:100px;
+   height:100px;
+   width:330px;
+   border-radius:30px;
+   margin-left:40px;
+   margin-right:40px;
+   position:absolute;
+   transform:translate(50%,170%);
+   border:none;
+   background-image:url("../img/button.png");
+   background-repeat:no-repeat;
+   background-size:100%;
+   font-size:32px;
+}
+.all{
+   min-height:100%;
+   position:relative;
+   top:0%;
+   bottom:0;
+}
+.con_main_form{
+   padding:0 auto;
+   text-align:center;
+   position:relative;
+   height:753px;
+   width:100%;
+}
+.b{
+	float: right;    
+    height: 100px;
+  	width: 150px;
+  	margin-right:25%;		/* 회원 사진 좌우 이동 */
+  	margin-top:8%;		/* 회원 사진 상하 이동 */
+}
+.user{				
+    height: 350px;
+    margin-left:26%;		/* 로고사진 좌우 이동 */
+	padding-top:0%;
+
+}
+.usermain{			/* 회원사진 */
+    float: right;    
+    text-align:left;
+	margin:0 auto;
+    height: 130px;
+	width: 150px;
+    padding-top:0%;
+      
+} 
+.logo{
+   text-align:center;
+}
+.img{		/* 메인 가운데 로고 사이즈 */
+   	height:315px;
+	width:333px;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+.active {
+  background-color: #717171;
+}
+.dotClass{
+  left:0;
+  top:90%;
+  float:left;
+  transform:translate(880%,2400%);
+}
+.video{
+   width:680px;
+   height:630px;
+}
+.Container  {
+   position:fixed;
+   max-width: 100%;
+   width: 70%;
+   height: 350px;
+   left: 0;
+   top: 30%;
+   padding: 0;
+}
