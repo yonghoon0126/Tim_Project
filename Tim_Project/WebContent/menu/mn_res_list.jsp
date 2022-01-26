@@ -62,6 +62,9 @@ hr{
 	height:10px;
 }
 </style>
+
+<script type="text/javascript" src="script/reserve.js"></script>
+
 </head>
 <body>
 	<%@ include file="../header.jsp" %>
@@ -70,7 +73,11 @@ hr{
 		<div class="row">
 			<form method="post" name="search" action="TimServlet?command=mn_search">
 				<input type="text" class="form-control" placeholder="검색어 입력" name="searchText" maxlength="100">
-				<div class="divBtn"><button type="submit" class="btn">검색</button></div>
+					<div class="divBtn">
+
+ 							<button class="btn" onclick="searchCheck()">검색</button>
+
+					</div>
 			</form>
 		</div>
 		<table class="a">
