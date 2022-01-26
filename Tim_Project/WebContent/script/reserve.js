@@ -1,15 +1,3 @@
-function searchCheck(){
-	if(document.search.searchText.value==""){
-	alert("검색어를 입력하세요.");
-		document.search.searchText.focus();
-	 	document.search.action = "TimServlet?command=mn_res_list";
-		return;
-	}else{
-	 document.search.action = "TimServlet?command=mn_search";
- 	 document.search.submit();
-  }
-}
-
 function delOwRev(){
 		var f = document.listRev;
 		var count = 0;
@@ -76,16 +64,27 @@ function goOwMain(){
 		f.submit()
 }
 
-function revAddcheck(){
-		var f = document.reserve;
+
+function revAdd(){
+
+	  var url = "TimServlet?command=reserve_add_form";
+  window.open( url, "_blank_1",
+"toolbar=no, menubar=no, scrollbars=yes, resizable=no, width=330, height=200");
+	
+}
+
+function revAdd2(){
+	
+	if (document.form.date.value == "undefined" || document.form.date.value == "") { 
+		alert('날짜를 입력하여 주십시오.');
+		return false;
+	}
+	if (document.form.time.value == "undefined" || document.form.time.value == "") { 
+		alert('시간을 입력하여 주십시오.');
+		return false;
 		
-		if(f.date.value=""){
-			alert('날짜를 입력하여 주십시오.');
-    		return;
-		}
-		if(f.time.value=""){
-			alert('시간을 입력하여 주십시오.');
-    		return;
-		}
-		
+	} else {
+    document.form.action = "TimServlet?command=reserve_add";
+    document.form.submit();
+  }
 }
