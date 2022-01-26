@@ -1,3 +1,15 @@
+function searchCheck(){
+	if(document.search.searchText.value==""){
+	alert("검색어를 입력하세요.");
+		document.search.searchText.focus();
+	 	document.search.action = "TimServlet?command=mn_res_list";
+		return;
+	}else{
+	 document.search.action = "TimServlet?command=mn_search";
+ 	 document.search.submit();
+  }
+}
+
 function delOwRev(){
 		var f = document.listRev;
 		var count = 0;
