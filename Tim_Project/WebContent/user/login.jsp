@@ -5,12 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>로그인</title>
-
-<script type="text/javascript">
-
-</script>
-
-
+<script type="text/javascript"></script>
 <style type="text/css">
 div {
 	position: absolute;
@@ -24,7 +19,6 @@ table {
 	left: 40%;
 }
 </style>
-
 </head>
 <body>
 	<form method="post" action="TimServlet?command=login" >

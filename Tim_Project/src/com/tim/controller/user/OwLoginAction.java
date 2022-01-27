@@ -30,11 +30,10 @@ public class OwLoginAction implements Action {
 	      if(ownerBean.getOw_pwd().equals(ow_pwd)){    
 	        session.removeAttribute("ow_id");
 	        session.setAttribute("ow_login_User", ownerBean);
-	        session.setAttribute("ow_id", ow_id);
 	        url="TimServlet?command=ow_main";
 	      }
 	    }
-	      System.out.println(ow_id + ow_pwd);
+	     
 
 	    request.getRequestDispatcher(url).forward(request, response);  
 	  }

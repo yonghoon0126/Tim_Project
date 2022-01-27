@@ -52,8 +52,8 @@
 }
 
 .video {
-	width: 600px; /* 동영상 가로 */
-	height: 520px; /* 동영상 세로 */
+	width: 600px; 				/* 동영상 가로 */
+	height: 520px; 				/* 동영상 세로 */
 	margin-top: 0px;
 }
 

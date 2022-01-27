@@ -79,7 +79,7 @@ table td{
    <div class="tableDiv">
    <table class="table">
       <tr>
-         <th>날짜</th><th>시간</th><th>예약자 아이디</th><th>삭제하기</th>
+         <th>날짜</th><th>시간</th><th>예약자 닉네임</th><th>삭제하기</th>
       </tr>
       <c:forEach var="row" items="${revList}">
         <tr>

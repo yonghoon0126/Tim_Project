@@ -94,6 +94,7 @@ public class BoardDao {
 	public BoardBean selectOneBoardByNum(String bo_num) {
 		String sql = "select * from board where bo_num = ?";
 
+
 		BoardBean bBn = null;
 		conn = null;
 		pstmt = null;

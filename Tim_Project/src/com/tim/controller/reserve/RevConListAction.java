@@ -22,23 +22,13 @@ public class RevConListAction implements Action {
 		HttpSession session = request.getSession();
 		ConsumerBean loginUser = (ConsumerBean) session.getAttribute("con_login_User");
 
-		/*
-		 * if (loginUser == null) { url = "TimServlet?command=login_form"; } else {
-		 * ReservationDao rvDao = ReservationDao.getInstance();
-		 * ArrayList<ReservationBean> revList = rvDao.listConRev(loginUser.getCon_id());
-		 * 
-		 * request.setAttribute("revList", revList); }
-		 */
-	
-	
-			ReservationDao rvDao = ReservationDao.getInstance();
-			ArrayList<ReservationBean> revList = rvDao.listConRev(loginUser.getCon_id());
-			
-			request.setAttribute("revList", revList);
-		
-		
+		ReservationDao rvDao = ReservationDao.getInstance();
+		ArrayList<ReservationBean> revList = rvDao.listConRev(loginUser.getCon_name());
+
+		request.setAttribute("revList", revList);
+
 		request.getRequestDispatcher(url).forward(request, response);
-				
+
 	}
 
 }

@@ -23,26 +23,26 @@ function searchCheck(){
 </script>
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&family=Do+Hyeon&family=Dongle:wght@300&family=IBM+Plex+Sans+KR:wght@200&family=Jua&family=Lato:ital,wght@0,300;1,700&family=Luxurious+Roman&family=Nanum+Gothic&family=Nanum+Gothic+Coding&family=Oswald:wght@600&family=Poppins:wght@500&family=Roboto+Condensed:wght@700&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
 <style>
-body{
-	
-}
 .a {
-	width: 1300px;
+	width: 40%;
 	table-layout: fixed;
-	margin-top:65px;
-	margin-left:450px;
+	margin-top:40px;
+	margin-left:580px;
 	margin-right:auto;
 	font-family:"Nanum Gothic",sans-serif;
 	font-size:22px;
+	
 }
 th, td {
 	border: 1px solid #444444;
+	border-color: #8F784B;
 }
 hr{
 	width:80%;
 }
 .row{
-	margin-top:20px;
+	margin-left: 5%;
+	
 }
 .form-control{
 	background-image:url("./img/search.png");
@@ -54,8 +54,8 @@ hr{
 	font-size:20px;
 	padding:0 0 0 65px;
 	cursor: pointer;
-	transform:translate(-20%,35%);
 	font-family:"Do Hyeon",sans-serif;
+	margin-left: -3%;
 }
 .btn{
 	background-image:url("./img/resBtn.png");
@@ -66,14 +66,26 @@ hr{
    	border:none;
     background-position: 0px center;
     padding:0px;     
-	float:left;
-	transform:translate(890%,-60%);
 	font-size:35px;
 	font-family:"Jua",sans-serif;
 }
-.divBtn{
-	background-color:white;
-	height:10px;
+.btn2{
+   border:none;
+   background-image:url("../img/button.png");
+   background-repeat:no-repeat;
+   background-size:100%;
+  font-size:20px;
+	font-family:"Jua",sans-serif;
+   width: 200px;
+  height:70px;
+  line-height: 48px; 
+  margin-top:1%;
+}
+.a th{
+background-color: #FFF9C4;
+}
+.container{
+	height: 575px;
 }
 </style>
 </head>
@@ -84,7 +96,7 @@ hr{
 		<div class="row">
 			<form method="post" name="search" action="TimServlet?command=mn_search">
 				<input type="text" class="form-control" placeholder="검색어 입력" name="searchText" maxlength="100">
-				<div class="divBtn">  <button class="btn" onclick="searchCheck()">검색</button></div>
+				<button class="btn" onclick="searchCheck()">검색</button>
 			</form>
 		</div>
 		<table class="a">
@@ -97,10 +109,10 @@ hr{
 					<td>
 						<c:choose>
 							<c:when test="${owner.ow_img ne '0'}">
-								<img src="upload/${owner.ow_img}" width="200px">
+								<img src="../upload/${owner.ow_img}" width="200px">
 							</c:when>
 							<c:otherwise>
-								<img src="upload/default_res.jpg" width="200px">
+								<img src="../upload/default_res.jpg" width="200px">
 							</c:otherwise>
 						</c:choose>
 					</td>
@@ -112,6 +124,7 @@ hr{
 				</tr>
 			</c:forEach>
 		</table>
+		<input class="btn2" type="button" value="메인으로 가기" onclick="location='TimServlet?command=con_main'">
 	</div>
 	<%@ include file="../footer.jsp" %>
 </body>

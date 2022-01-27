@@ -55,15 +55,16 @@ hr{
 	font-family:"Jua",sans-serif;
 }
 .btn2{
-   border:none;
-   background-image:url("../img/button.png");
-   background-repeat:no-repeat;
-   background-size:100%;
-  font-size:20px;
+	border:none;
+	background-image:url("../img/button.png");
+	background-repeat:no-repeat;
+	background-size:100%;
+	font-size:20px;
 	font-family:"Jua",sans-serif;
-   width: 200px;
-  height:70px;
-  line-height: 48px; 
+	width: 200px;
+	height:70px;
+	line-height: 48px; 
+	margin-top:1%;
 }
 .a th{
 background-color: #FFF9C4;
@@ -75,7 +76,7 @@ background-color: #FFF9C4;
 	<hr>
 	<div class="container" align="center">
 		<div class="row">
-			<form method="post" name="search" action="TimServlet?command=mn_search">
+			<form method="post" name="search" action="TimServlet?command=mn_serarch">
 				<input type="text" class="form-control" placeholder="검색어 입력" name="searchText" maxlength="100">
 				<button type="submit" class="btn-success btn">검색</button>
 			</form>
@@ -91,10 +92,10 @@ background-color: #FFF9C4;
                <td>
                   <c:choose>
                      <c:when test="${owner.ow_img ne '0'}">
-                        <img src="upload/${owner.ow_img}" width="200px">
+                        <img src="../upload/${owner.ow_img}" width="200px">
                      </c:when>
                      <c:otherwise>
-                        <img src="upload/default_res.jpg" width="200px">
+                        <img src="../upload/default_res.jpg" width="200px">
                      </c:otherwise>
                   </c:choose>
                </td>

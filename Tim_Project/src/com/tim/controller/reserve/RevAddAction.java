@@ -18,7 +18,7 @@ public class RevAddAction implements Action {
 
 	@Override
 	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String url ="TimServlet?command=reserve_success";
+		String url ="reserve/rev_success_form.jsp";
 		
 		HttpSession session = request.getSession();
 		

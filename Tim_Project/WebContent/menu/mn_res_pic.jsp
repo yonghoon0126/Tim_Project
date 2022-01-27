@@ -24,6 +24,7 @@
 
 body {
         margin:0;
+        font-size : 20px;
       }
 
 .form{
@@ -32,7 +33,9 @@ body {
 	text-align:center;
 	line-height: 150px;
 }
-
+.btn{
+   font-size : 20px;
+}
 </style>
 </head>
 <body>
@@ -40,8 +43,9 @@ body {
 	<div class="form">
 		&emsp;&emsp;&emsp;&emsp;
 		가게 사진 : <input type="file" name="pic">
-		<input type="button" value="추가하기" onclick="mn_res_pic()"> 
-		<input type="reset" value="취소하기">
+		<br>
+		<input class="btn" type="button" value="추가하기" onclick="mn_res_pic()"> 
+		<input class="btn" type="reset" value="취소하기">
 		</div>
 	</form>
 </body>

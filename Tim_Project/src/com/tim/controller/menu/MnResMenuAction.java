@@ -17,20 +17,23 @@ public class MnResMenuAction implements Action {
 
 	@Override
 	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String url="/menu/mn_res_menu.jsp";
-		
+		String url = "/menu/mn_res_menu.jsp";
+
 		HttpSession session = request.getSession();
-		OwnerBean loginOw=(OwnerBean)session.getAttribute("ow_login_User");
+		OwnerBean loginOw = (OwnerBean) session.getAttribute("ow_login_User");
 		String Owname = loginOw.getOw_name();
-		
-		MenuDAO dao=MenuDAO.getInstance();
-		List<MenuBean> menu=dao.selectOnemenu(Owname);
-		System.out.println("menu : "+menu);
-		System.out.println("img : "+loginOw.getOw_img());
-		
-		request.setAttribute("menu",menu);
-		request.setAttribute("ow_img",loginOw.getOw_img());
-		
+
+		MenuDAO dao = MenuDAO.getInstance();
+		List<MenuBean> menu = dao.selectOnemenu(Owname);
+		System.out.println("menu : " + menu);
+		System.out.println("img : " + loginOw.getOw_img());
+		request.setAttribute("ow_name", loginOw.getOw_name());
+		request.setAttribute("ow_addr", loginOw.getOw_addr());
+		request.setAttribute("ow_phon", loginOw.getOw_phon());
+
+		request.setAttribute("menu", menu);
+		request.setAttribute("ow_img", loginOw.getOw_img());
+
 		request.getRequestDispatcher(url).forward(request, response);
 
 	}

@@ -30,7 +30,6 @@ public class ConUpdateAction implements Action {
 		consumerBean.setCon_pwd_ck(request.getParameter("con_pwd_ck"));
 		consumerBean.setCon_phon(request.getParameter("con_phon"));
 
-//	    session.setAttribute("con_id", request.getParameter("con_id"));    
 		session.setAttribute("con_login_User", consumerBean);
 
 		System.out.println("consumerBean@@@@@@@@@@@@@@@" + consumerBean);

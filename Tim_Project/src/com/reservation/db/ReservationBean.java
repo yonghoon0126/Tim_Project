@@ -3,8 +3,8 @@ package com.reservation.db;
 public class ReservationBean {
 	private String rev_time ;
 	private String rev_date ;
-	private String rev_name;
-	private String rev_id;
+	private String rev_name;//식당이름
+	private String rev_id;//손님아이디
 	private int rev_num;
 	
 	

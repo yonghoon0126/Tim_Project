@@ -33,7 +33,6 @@
 			</div>
 
 			<hr class="hr">
-			
 			<div class="Container">
 				<div class="mySlides fade">
 					<video class="video" width="100%" height="150%" autoplay loop muted>
@@ -59,6 +58,7 @@
 					class="dot"></span>
 			</div>
 
+			<form method="post" name="frm">
 				<div class="a">
 					<input class="resBtn1" type="button" value="예약하기" onclick="location='TimServlet?command=mn_res_list'">
 					
@@ -66,6 +66,7 @@
 				
 					<input class="resBtn3" type="button" value="게시판" onclick="location='TimServlet?command=board_list'">
 				</div>
+			</form>
 			</div>
 	</div>
 	<footer class="footer">

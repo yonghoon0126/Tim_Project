@@ -22,38 +22,21 @@ public class ConLoginAction implements Action {
 	    String con_id=request.getParameter("con_id");
 	    String con_pwd=request.getParameter("con_pwd");
 	    
-	    
-	    ////////////////////////////////////////////////////////////////////////////////////////////
-	    									String con_name=request.getParameter("con_name");
-	    ////////////////////////////////////////////////////////////////////////////////////////////
-	    
 	    ConsumerDAO consumerDAO=ConsumerDAO.getInstance();
 	      
 	    ConsumerBean consumerBean=consumerDAO.getConsumer(con_id);
-	    System.out.println("ConLoginAction  .."+consumerBean.toString());
+	    
 	    if(consumerBean!=null){
 	      if(consumerBean.getCon_pwd().equals(con_pwd)){
-	    	session.setAttribute("con_login_User", consumerBean);
-	        
-	    	
-	    	session.removeAttribute("con_id");
-	        session.setAttribute("con_id", con_id);	   
-
-	        
-	        /////////////////////////////////////////////
-									        session.setAttribute("con_name", con_name);	   
-									        session.setAttribute("con_pwd", con_pwd);	   
-	        /////////////////////////////////////////////
-	        
-	        
-	        
-	        
+	        session.removeAttribute("con_id");
+	        session.setAttribute("con_login_User", consumerBean);
+	      //  session.setAttribute("con_id", con_id);	   
 	        
 	        url="TimServlet?command=con_main";
 	      }
-	      System.out.println(con_id + con_pwd);
+	     // System.out.println(con_id + con_pwd);
 	    }
-	    System.out.println(con_id + con_pwd);
+	   // System.out.println(con_id + con_pwd);
 	    request.getRequestDispatcher(url).forward(request, response); 
 	  }
 	}

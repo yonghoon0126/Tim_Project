@@ -60,7 +60,7 @@ table {
 				<td>설명 : <input type="text" name="content"></td>
 			</tr>
 		</table>
-
+		
 		<input class="insertBtn" type="button" value="추가하기" onclick="mn_insert()" > 
 		<input class="insertBtn" type="reset" value="취소하기">
 		<input class="insertBtn" type="button" value="닫기" onclick="insert_ok()">	

@@ -41,7 +41,7 @@ public class ReservationDao {
 	}
 
 	// 손님 예약 조회
-	public ArrayList<ReservationBean> listConRev(String userId) {
+	public ArrayList<ReservationBean> listConRev(String userName) {
 		ArrayList<ReservationBean> revList = new ArrayList<ReservationBean>();
 		String sql = "select * from reservation where rev_id=? order by rev_time desc";
 
@@ -52,7 +52,7 @@ public class ReservationDao {
 		try {
 			conn = DBManager.getConnection();
 			pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1, userId);
+			pstmt.setString(1, userName);
 			rs = pstmt.executeQuery();
 			while (rs.next()) {
 				ReservationBean rvBean = new ReservationBean();

@@ -34,9 +34,15 @@ public class MnResViewAction implements Action {
 		OwnerBean owBean = new OwnerBean();
 		OwnerDAO owDao = OwnerDAO.getInstance();
 		
-		owBean = owDao.selectImg(name);
+		owBean = owDao.selectRes(name);
 		
-		request.setAttribute("ow_img",owBean);
+		String owPhon = owBean.getOw_phon();
+		String owAddr = owBean.getOw_addr();
+		String owImg = owBean.getOw_img();
+		
+		request.setAttribute("ow_img",owImg);
+		request.setAttribute("ow_addr",owAddr);
+		request.setAttribute("ow_phon",owPhon);
 		request.setAttribute("mn_res",res);
 		request.setAttribute("mn_owner",name);
 		

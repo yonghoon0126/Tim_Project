@@ -31,7 +31,6 @@ public class OwUpdateAction implements Action {
 		ownerBean.setOw_phon(request.getParameter("ow_phon"));  
 		ownerBean.setOw_addr(request.getParameter("ow_addr"));  
 
-//	    session.setAttribute("con_id", request.getParameter("con_id"));    
         session.setAttribute("ow_login_User", ownerBean);
 
 

@@ -9,12 +9,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&family=Do+Hyeon&family=Dongle:wght@300&family=IBM+Plex+Sans+KR:wght@200&family=Jua&family=Lato:ital,wght@0,300;1,700&family=Luxurious+Roman&family=Nanum+Gothic&family=Nanum+Gothic+Coding&family=Oswald:wght@600&family=Poppins:wght@500&family=Roboto+Condensed:wght@700&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="./css/main.css">
 </head>
+
+
 <body id="body">
 	<div class="leftSide"></div>
 	<div class="all">
   		<div id="logo">
 			<img class="logoImg" src="./img/logo.png">
    		</div>
+   		
 	<form class="logForm">
       <div class="All">
 		<div class="conAll">

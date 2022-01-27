@@ -185,8 +185,8 @@ public class OwnerDAO {
 		}
 	}
 
-	public OwnerBean selectImg(String name) {
-		String sql = "select ow_img from owner where ow_name=?";
+	public OwnerBean selectRes(String name) {
+		String sql = "select * from owner where ow_name=?";
 		Connection conn = null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
@@ -201,6 +201,8 @@ public class OwnerDAO {
 			rs = pstmt.executeQuery();
 			if (rs.next()) {
 				owBean.setOw_img(rs.getString("ow_img"));
+				owBean.setOw_phon(rs.getString("ow_phon"));
+				owBean.setOw_addr(rs.getString("ow_addr"));
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
