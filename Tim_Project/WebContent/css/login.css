@@ -82,14 +82,9 @@ html, body{
 .btn2:hover{
 	background:#FDE1B4;
 }
-footer{
-width:100%;
-position:absolute;
-bottom:0;
-left:0;
-}
 .bodyWrapper{
 	position:relative;
+	height: 800px;
 }
 .all{
 	min-height:100%;
@@ -119,5 +114,4 @@ left:0;
 	background-color:#584630;
 	height:1px;
 	width:100%;
-	margin:0;
 }

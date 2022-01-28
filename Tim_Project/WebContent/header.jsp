@@ -13,11 +13,17 @@ div{
 	height:250px;
 	width:300px;
 }
+hr{
+	width: 80%;
+	height: 1px;
+	background-color:#584630
+}
 </style>
 </head>
 <body>
 <div>
 	<img class="logo" src="./img/logo.png">
 </div>
+<hr>
 </body>
 </html>

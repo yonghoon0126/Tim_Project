@@ -52,14 +52,13 @@ body {
 }
 .mySlides {display: none;}
 .Container  {
-   position:fixed;
+   position:relative;
    max-width: 100%;
    margin: auto;
    flex-direction:row;
-   position: absolute;
    width:80%;
    height: 350px;
-   left: 13%;
+   left: 3%;
    top: 55%;
    padding: 0;
    justify-content: center;

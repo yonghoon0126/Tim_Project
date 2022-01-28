@@ -10,14 +10,23 @@
 <link rel="stylesheet" type="text/css" href="./css/login.css">
 <script type="text/javascript">
 </script>
+<style type="text/css">
+#container{
+     width: 1920px;  
+     height: 937px;
+}
+</style>
 </head>
 <body>
+<div id="container">
 <div class="all">
 <div class="bodyWrapper">
 <div class="login_form">
 	<form method="post" action="TimServlet?command=ow_login" >
-		<div><img class="logo" src="img/logo.png"></div>
-		<hr class="hr">
+		<header>
+		<%@ include file="../header.jsp"%>
+		</header>
+	<main>
 		<div>
 			<input type="text" name="ow_id" value=""  placeholder="아이디를 입력" class="text1">
 		</div>
@@ -40,13 +49,14 @@
             <input class="input" type="button" value="회원 가입"
             onclick="location='TimServlet?command=join_select'">
         </div>
-        
+        </main>
 	</form>
 </div>
 </div>
-<footer class="footer">
+<footer>
 <%@ include file="../footer.jsp" %>
 </footer>
+</div>
 </div>
 </body>
 </html>

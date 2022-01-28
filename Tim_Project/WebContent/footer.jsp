@@ -22,42 +22,32 @@ body{
       position:relative;
       float:left;
 }
-
+hr{
+	width: 80%;
+	height: 1px;
+	background-color:#584630
+	
+}
 
 .footer {
 /* 
     */
-   margin :auto;
+   position:relative;
+   margin:auto;
    padding : 0;
-   width: 100%;
-    position: absolute;  
+   width: 100%; 
    font-family :"IBM Plex Sans KR",sans-serif;
     bottom: 0;
    text-align : center;
    
 }
 
-/*.hr{
-
-   width: 80%;
-
-}*/
-
-
 </style>
-
-
-
-
-
-    
-  <footer class="footer">  
-    <hr class="hr">
+<hr>
+<div class="footer">
         All contents Copyright 2022 TimeIsMoney Inc. all rights reserved<br>
         Contact mail : TimeIsMoney@TimeIsMoney.com<br> 
         Tel: 02-123-4567 <br>
-  </footer>
-  
-  
+</div>
 </body>
 </html>

@@ -1,6 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+
+
 <html>
 <head>
 <meta charset="UTF-8">
@@ -8,19 +10,29 @@
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&family=Do+Hyeon&family=Dongle:wght@300&family=IBM+Plex+Sans+KR:wght@200;300;500&family=Jua&family=Lato:ital,wght@0,300;1,700&family=Luxurious+Roman&family=Nanum+Gothic&family=Nanum+Gothic+Coding&family=Oswald:wght@600&family=Poppins:wght@500&family=Roboto+Condensed:wght@700&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&family=Do+Hyeon&family=Dongle:wght@300&family=IBM+Plex+Sans+KR:wght@200&family=Jua&family=Lato:ital,wght@0,300;1,700&family=Luxurious+Roman&family=Nanum+Gothic&family=Nanum+Gothic+Coding&family=Oswald:wght@600&family=Poppins:wght@500&family=Roboto+Condensed:wght@700&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="./css/main.css">
+<style type="text/css">
+#container{
+     width: 1920px;  
+}
+</style>
 </head>
 
-
 <body id="body">
-	<div class="leftSide"></div>
-	<div class="all">
-  		<div id="logo">
-			<img class="logoImg" src="./img/logo.png">
-   		</div>
-   		
-	<form class="logForm">
+<div id="container">
+<header>
+<div class="leftSide"></div>
+<div class="all">
+   <div id="logo">
+      <img class="logoImg" src="./img/logo.png">
+   </div>
+
+   <form class="logForm">
+
       <div class="All">
-		<div class="conAll">
+
+         
+         
+			<div class="conAll">
             	<div class="con">
                 	<img class="img1" src="./img/consumer.png" alt="손님" width="70" height="70">
             	</div>
@@ -57,6 +69,9 @@
       </div>
 
    </form>
+</div>
+</header>
+<main>
 
    <div class="Container">
 
@@ -110,14 +125,15 @@
       </div>
 
    </div>
-   
 
    <script src="script/main.js"></script>
 
-</div>
+
 <div class="rightSide"></div>
-</body>
-
-
-</html>
+</main>
+<footer>
 <%@ include file="../footer.jsp"%>
+</footer>
+</div>
+</body>
+</html>
