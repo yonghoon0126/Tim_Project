@@ -142,14 +142,14 @@ hr {
 .add {
 	float: left;
 	font-size: 20px;
-	padding: 20px 0 0 5px;
+	padding: 20px 0 0 20px;
 	font-family: Do Hyeon, sans-serif;
 }
 
 .phon {
 	float: left;
 	font-size: 20px;
-	padding: 3px 0 0 5px;
+	padding: 3px 0 0 20px;
 	font-family: Do Hyeon, sans-serif;
 }
 
@@ -190,15 +190,11 @@ hr {
 						</c:otherwise>
 					</c:choose></td>
 			</tr>
-			<tr class="infoTd">
-				<td><div class="name">${mn_owner}</div></td>
-			</tr>
-			<tr class="infoTd">
-				<td><div class="add">${ow_addr}</div></td>
-			</tr>
-			<tr class="infoTd"> 
-				<td><div class="phon">${ow_phon}</div></td>
-			</tr>					
+			<tr><td class="infoTd">
+            <div class="name">${mn_owner}</div>
+            <div class="add">${ow_addr}</div>
+            <div class="phon">${ow_phon}</div>
+         </td></tr>					
 		</table>
 	</div>
 	<div class="a">
