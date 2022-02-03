@@ -51,9 +51,54 @@ start with 1
 increment by 1;		
 
 
+
 insert into board(bo_num,bo_name,bo_pass,bo_title,bo_content) values(
-   bo_seq.nextval,'4321','4321','4321','4321'
+   bo_seq.nextval,'TimeIsMoney','123','고생 많이 했습니다','고생 많이 했습니다'
 );
+
+insert into board(bo_num,bo_name,bo_pass,bo_title,bo_content) values(
+   bo_seq.nextval,'Money','123','그동안','그동안'
+);
+
+insert into board(bo_num,bo_name,bo_pass,bo_title,bo_content) values(
+   bo_seq.nextval,'Is','123','취뽀합시다','취뽀합시다'
+);
+
+insert into board(bo_num,bo_name,bo_pass,bo_title,bo_content) values(
+   bo_seq.nextval,'Time','123','우리 모두','우리 모두'
+);
+
+insert into board(bo_num,bo_name,bo_pass,bo_title,bo_content) values(
+   bo_seq.nextval,'Money','123','22일은 실기','22일은 실기'
+);
+
+insert into board(bo_num,bo_name,bo_pass,bo_title,bo_content) values(
+   bo_seq.nextval,'Is','123','21일은 필기','21일은 필기'
+);
+
+insert into board(bo_num,bo_name,bo_pass,bo_title,bo_content) values(
+   bo_seq.nextval,'Time','123','자소서 쓰고','자소서 쓰고'
+);
+
+insert into board(bo_num,bo_name,bo_pass,bo_title,bo_content) values(
+   bo_seq.nextval,'TimeIsMoney','123','이력서 쓰고','이력서 쓰고'
+);
+
+insert into board(bo_num,bo_name,bo_pass,bo_title,bo_content) values(
+   bo_seq.nextval,'Money','123','시험공부하고 ','시험공부하고'
+);
+
+insert into board(bo_num,bo_name,bo_pass,bo_title,bo_content) values(
+   bo_seq.nextval,'Is','123','이제 ','이제'
+);
+
+insert into board(bo_num,bo_name,bo_pass,bo_title,bo_content) values(
+   bo_seq.nextval,'Time','123','아싸 종강이다','아싸 종강이다'
+);
+
+
+
+
 
 select * from board;
 drop table board;

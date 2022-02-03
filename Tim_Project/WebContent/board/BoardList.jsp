@@ -177,8 +177,12 @@ html, body {
 
 
 <body>
+<header>
 <%@ include file="../header.jsp" %>
-<hr>
+</header>
+
+<main>
+</main>
    <div id="wrap" align="center">
       
       
@@ -225,6 +229,8 @@ html, body {
    
    </div>
    
+<footer>
+<%@ include file="../footer.jsp" %>
+</footer>
 </body>
 </html>
-<%@ include file="../footer.jsp" %>
