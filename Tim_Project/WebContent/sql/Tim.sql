@@ -58,6 +58,7 @@ insert into board(bo_num,bo_name,bo_pass,bo_title,bo_content) values(
 select * from board;
 drop table board;
 drop sequence bo_seq;
+drop sequence rev_seq;
 
 select * from menu;
 select * from owner;
