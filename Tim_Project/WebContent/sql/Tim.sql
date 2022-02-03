@@ -294,4 +294,3 @@ insert into board(bo_num,bo_name,bo_pass,bo_title,bo_content) values(
 );
 
 commit;
-rollback;
