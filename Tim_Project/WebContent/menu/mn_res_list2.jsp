@@ -23,6 +23,16 @@ function searchCheck(){
 </script>
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&family=Do+Hyeon&family=Dongle:wght@300&family=IBM+Plex+Sans+KR:wght@200&family=Jua&family=Lato:ital,wght@0,300;1,700&family=Luxurious+Roman&family=Nanum+Gothic&family=Nanum+Gothic+Coding&family=Oswald:wght@600&family=Poppins:wght@500&family=Roboto+Condensed:wght@700&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
 <style>
+.a {
+	width: 40%;
+	table-layout: fixed;
+	margin-top:40px;
+	margin-left:580px;
+	margin-right:auto;
+	font-family:"Nanum Gothic",sans-serif;
+	font-size:22px;
+	
+}
 th, td {
 	border: 1px solid #444444;
 	border-color: #8F784B;
@@ -74,69 +84,14 @@ hr{
 .a th{
 background-color: #FFF9C4;
 }
-
-
-
-.all {
-	margin-left: auto;
-	margin-right: auto;
-	height: 393px; 					/* 테이블 전체 높이 */
-	width: 1000px; 					/* 너비 */
-	border: 1px solid #444444; 
-	border-spacing: 0px;
-}
-
-
-
 .container{
 	height: 575px;
 }
-
-
-.a {
-	width: 40%;
-	table-layout: fixed;
-	margin-top: 0px;
-	margin-left:580px;
-	margin-right:auto;
-	font-family:"Nanum Gothic",sans-serif;
-	font-size:22px;
-	
-}
-
-.scroll {
-	margin-left: 582px;
-	margin-right: auto;
-	overflow-y: scroll;
-	overflow-x: hidden;
-	border-spacing: 0px;
-	border: 1px solid #444444; 
-	height: 268px; 					/* 스크롤 높이 */
-	width: 762px; 					/* td 너비 */
-	}
-	
-.list {
-	margin-left: auto;
-	margin-right: auto;
-	border-collapse: collapse;
-	text-align: center;
-	border: none;
-	height: 50px;
-	border-spacing: 0px;
-	border: 1px solid #444444;
-	width: 100%;
-}
-
-
-
-	
-	
 </style>
 </head>
 <body>
 	<%@ include file="../header.jsp" %>
 	<hr>
-	
 	<div class="container" align="center">
 		<div class="row">
 			<form method="post" name="search" action="TimServlet?command=mn_search">
@@ -144,31 +99,11 @@ background-color: #FFF9C4;
 				<button class="btn" onclick="searchCheck()">검색</button>
 			</form>
 		</div>
-		
-		
-		
-		
-		
-      
-      
-      
-      
-      
 		<table class="a">
 			<tr>
 				<th>가게 사진</th>
 				<th>가게 정보</th>
 			</tr>
-			
-		</table>	
-			
-			
-	<div class="scroll">
-			
-			
-			
-		<table class="list">	
-			
 			<c:forEach var="owner" items="${ownerList}">
 				<tr>
 					<td>
@@ -189,17 +124,7 @@ background-color: #FFF9C4;
 				</tr>
 			</c:forEach>
 		</table>
-		
-		
-		</div>
-		
-		
-		
 		<input class="btn2" type="button" value="메인으로 가기" onclick="location='TimServlet?command=con_main'">
-
-
-	
-	
 	</div>
 	<%@ include file="../footer.jsp" %>
 </body>

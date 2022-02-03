@@ -181,14 +181,13 @@ html, body {
 <%@ include file="../header.jsp" %>
 </header>
 
-<main>
-</main>
    <div id="wrap" align="center">
       
       
       <h1>생생 리뷰!</h1>
 
       <div class="all">
+     
       <table class="list2">
          
          <tr>
