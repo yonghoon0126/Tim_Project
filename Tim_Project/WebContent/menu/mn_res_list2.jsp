@@ -71,7 +71,7 @@ hr{
 }
 .btn2{
    border:none;
-   background-image:url("../img/button.png");
+   background-image:url("./img/button.png");
    background-repeat:no-repeat;
    background-size:100%;
   font-size:20px;
@@ -99,6 +99,7 @@ background-color: #FFF9C4;
 				<button class="btn" onclick="searchCheck()">검색</button>
 			</form>
 		</div>
+		
 		<table class="a">
 			<tr>
 				<th>가게 사진</th>
@@ -109,10 +110,10 @@ background-color: #FFF9C4;
 					<td>
 						<c:choose>
 							<c:when test="${owner.ow_img ne '0'}">
-								<img src="../upload/${owner.ow_img}" width="200px">
+								<img src="./foodImg/${owner.ow_img}" width="200px">
 							</c:when>
 							<c:otherwise>
-								<img src="../upload/default_res.jpg" width="200px">
+								<img src="./foodImg/default_res.jpg" width="200px">
 							</c:otherwise>
 						</c:choose>
 					</td>

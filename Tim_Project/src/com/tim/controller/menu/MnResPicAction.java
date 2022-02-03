@@ -27,7 +27,7 @@ public class MnResPicAction implements Action {
 		OwnerBean loginUser = (OwnerBean) session.getAttribute("ow_login_User");
 
 		int sizeLimit = 5 * 1024 * 1024;
-		String savePath = "upload";
+		String savePath = "foodImg";
 		ServletContext context = session.getServletContext();
 		String uploadFilePath = context.getRealPath(savePath);
 

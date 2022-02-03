@@ -92,10 +92,10 @@ background-color: #FFF9C4;
                <td>
                   <c:choose>
                      <c:when test="${owner.ow_img ne '0'}">
-                        <img src="../upload/${owner.ow_img}" width="200px">
+                        <img src="../foodImg/${owner.ow_img}" width="200px">
                      </c:when>
                      <c:otherwise>
-                        <img src="../upload/default_res.jpg" width="200px">
+                        <img src="../foodImg/default_res.jpg" width="200px">
                      </c:otherwise>
                   </c:choose>
                </td>
