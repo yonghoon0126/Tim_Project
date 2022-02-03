@@ -177,14 +177,17 @@ html, body {
 
 
 <body>
+<header>
 <%@ include file="../header.jsp" %>
-<hr>
+</header>
+
    <div id="wrap" align="center">
       
       
       <h1>생생 리뷰!</h1>
 
       <div class="all">
+     
       <table class="list2">
          
          <tr>
@@ -225,6 +228,8 @@ html, body {
    
    </div>
    
+<footer>
+<%@ include file="../footer.jsp" %>
+</footer>
 </body>
 </html>
-<%@ include file="../footer.jsp" %>

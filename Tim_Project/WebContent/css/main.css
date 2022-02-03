@@ -167,3 +167,9 @@ body {
    	height:100px;
    	transform:translate(2%,-17%);
 }
+
+
+.hr{
+	margin-top:0;
+	width: 80%;
+}
