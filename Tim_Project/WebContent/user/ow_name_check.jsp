@@ -27,7 +27,7 @@ function ow_name_ok(){
 
 <body>
 <div id="wrap">
-  <h1>ID 중복확인</h1>
+  <h1>가게이름 중복확인</h1>
   <form method=post name=frm style="margin-right:0 "
   action="TimServlet?command=ow_name_check_form" >
   
