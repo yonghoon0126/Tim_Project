@@ -149,7 +149,7 @@ input {
 					
 					<th class="t3">비밀번호</th>
 					<td class="t4"><input type="password" name="bo_pass" value="" placeholder=" * 로그인 시 비밀번호를 입력해주세요.">
-						<input type="hidden" name="con_pwd"	value="${con_login_User.con_pwd}"></td>
+									<input type="hidden" name="con_pwd"	value="${con_login_User.con_pwd}"></td>
 				</tr>
 				
 				<tr>
