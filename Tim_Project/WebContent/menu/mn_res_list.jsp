@@ -146,14 +146,6 @@ background-color: #FFF9C4;
 		</div>
 		
 		
-		
-		
-		
-      
-      
-      
-      
-      
 		<table class="a">
 			<tr>
 				<th>가게 사진</th>
