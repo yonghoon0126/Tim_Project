@@ -145,7 +145,6 @@ background-color: #FFF9C4;
 			</form>
 		</div>
 		
-		
 		<table class="a">
 			<tr>
 				<th>가게 사진</th>
